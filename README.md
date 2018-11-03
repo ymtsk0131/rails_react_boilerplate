@@ -1,24 +1,42 @@
-# README
+# Rails+Reactのアプリケーション雛形
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## バージョン
 
-Things you may want to cover:
+Rails 5.2.1
+Ruby 2.4.2
 
-* Ruby version
+## 導入手順
 
-* System dependencies
+- リポジトリをクローン
 
-* Configuration
+```
+$ git clone https://github.com/ymtsk0131/rails_react_boilerplate.git
+```
 
-* Database creation
+- Docker環境構築
 
-* Database initialization
+```
+$ docker-compose build
+```
 
-* How to run the test suite
+- データベース作成
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ docker-compose run rails rails db:create
+```
 
-* Deployment instructions
+- サーバー立ち上げ
 
-* ...
+```
+$ docker-compose up
+```
+
+http://localhost:3000 にアクセスし、ページが表示されれば環境構築完了
+
+あとは自由に開発
+
+## 開発マニュアル
+
+https://github.com/ymtsk0131/rails_react_boilerplate/wiki
+
+＊随時加筆予定
