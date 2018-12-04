@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'sample#index'
+  devise_for :users
+  get 'users', to: 'users#index'
+  get 'api/users', to: 'api/users#index'
 end

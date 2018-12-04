@@ -22,6 +22,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # 以下追加したgem
 gem 'meta-tags' # メタタグをセットするメソッドを提供
+gem 'devise'
+gem 'faker'
 
 # 開発環境とテスト環境で利用
 group :development, :test do
